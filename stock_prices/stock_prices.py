@@ -11,9 +11,12 @@ def find_max_profit(prices):
     for j in range(i,0,-1):
       if prices[j] < prices[i]:
         differences.append(prices[i] - prices[j])
-  print("DIFF", differences)
+  if len(differences) == 0:
+    #check last element with other smallest element
+    return prices[-1] - min(prices[:-1])
   return max(differences)
-
+  #if differences empty check for smallest loss
+#[100, 90, 80, 50, 20, 10]), -10
 #[10, 7, 5, 8, 11, 9] 6
 #[1050, 270, 1540, 3800, 2] 3530
 if __name__ == '__main__':
@@ -23,3 +26,5 @@ if __name__ == '__main__':
   args = parser.parse_args()
 
   print("A profit of ${profit} can be made from the stock prices {prices}.".format(profit=find_max_profit(args.integers), prices=args.integers))
+
+  # print(find_max_profit)

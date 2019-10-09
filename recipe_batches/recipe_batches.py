@@ -3,7 +3,16 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  pass 
+  #find each keys value
+  #find the modulous thing of each pair
+  #take those values and workout how many batches we can make
+  batches = []
+  for i in ingredients.keys():
+    print("INGRED",i)
+    for j in recipe.keys():
+      print("RECIPE",j)
+      if i = j:
+        batches.append(i)
 
 
 if __name__ == '__main__':
