@@ -3,17 +3,19 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  #find each keys value
-  #find the modulous thing of each pair
-  #take those values and workout how many batches we can make
   batches = []
-  for i in ingredients.keys():
-    print("INGRED",i)
-    for j in recipe.keys():
-      print("RECIPE",j)
-      if i = j:
-        batches.append(i)
 
+  if len(ingredients) != len(recipe):
+    return 0
+  else:
+    for i in ingredients.keys():
+      for j in recipe.keys():
+          if i == j:
+            batches.append(ingredients[i]//recipe[j])
+  for i in range(len(batches)):
+    if batches[i] == 0 or len(batches) == 0:
+      return 0
+    return min(batches)
 
 if __name__ == '__main__':
   # Change the entries of these dictionaries to test 

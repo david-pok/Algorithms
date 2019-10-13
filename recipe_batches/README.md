@@ -35,3 +35,41 @@ You can also test your implementation manually by executing `python recipe_batch
 
  * If there's a dictionary operation you aren't sure of how to perform in Python, look it up!
  * What's the _minimum_ number of loops we need to perform in order to write a working implementation?
+
+
+
+ 1_
+ 1
+
+ 2_
+ 11
+ 2
+
+ 3_
+ 111
+ 12
+ 21
+ 3
+
+ 4_
+ 1111
+ 112
+ 121
+ 211
+ 31
+ 13
+
+ 5_
+ 11111
+ 1112
+ 1121
+ 1211
+ 2111
+ 113
+ 131
+ 311
+ 221
+ 212
+ 122
+ 32
+ 23
